@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Sedona Michels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Comfortaa', cursive;
+            background: repeating-linear-gradient(
+                0deg,
+                white,
+                white 50px,
+                rgba(173, 216, 230, 0.3) 50px,
+                rgba(173, 216, 230, 0.3) 100px
+            );
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .nav-links {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-family: 'Comfortaa', cursive;
+            margin: 0 5px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+        .navbar a.active {
+            background-color: navy;
+            color: white;
+            border-radius: 3px;
+        }
+        .home-icon {
+            color: navy;
+            text-decoration: none;
+            font-size: 70px;
+            margin-left: 20px;
+            transition: transform 0.3s ease;
+            line-height: 1;
+            padding: 0;
+            font-weight: bold;
+        }
+        .home-icon:hover {
+            transform: scale(1.1);
+        }
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="home-icon" title="Home">&#8962;</a>
+        <div class="nav-links">
+            <a href="index.html">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="resume.html">Resume</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="careers.html">Careers</a>
+            <a href="discover.html">Discover</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Content will be added here -->
+    </div>
+</body>
+</html>

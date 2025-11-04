@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Sedona Michels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Comfortaa', cursive;
+            background: repeating-linear-gradient(
+                0deg,
+                white,
+                white 50px,
+                rgba(173, 216, 230, 0.3) 50px,
+                rgba(173, 216, 230, 0.3) 100px
+            );
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .nav-links {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-family: 'Comfortaa', cursive;
+            margin: 0 5px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+        .navbar a.active {
+            background-color: navy;
+            color: white;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="resume.html">Resume</a>
+            <a href="careers.html" class="active">Careers</a>
+            <a href="discover.html">Discover</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="intro">
+            Companies That Interest Me
+        </div>
+
+        <div class="company-section">
+            <h2>Starbucks</h2>
+            <div class="contact">1(800)-782-7282</div>
+            <div class="description">
+                After five years as a barista, I've grown to really love not just making great coffee, but being part of the community that builds around it. I'm passionate about coffee, the customer experience, and the culture that makes being a barista feel like more than just a job. Moving into a corporate role feels like the right next step. I'd love to take everything I've learned on the floor in various companies and use it to make a bigger impact. I know what it's like behind the counter, and I feel that my knowledge and skills would help shape ideas and decisions that support stores and partners in a real way.
+            </div>
+        </div>
+
+        <div class="company-section">
+            <h2>Delta</h2>
+            <div class="contact">1(800)-221-1212</div>
+            <div class="description">
+                I want to work for Delta Corporate because the company puts customers first, always aiming to provide excellent experiences and build strong relationships. I also admire Delta's commitment to sustainability and protecting the environment, which shows they're focused on the future. Along with that, the great perks they offer demonstrate how much they value their employees and strive to create a positive, supportive workplace. For me, being part of a company that balances customer care, environmental responsibility, and employee well-being is an exciting opportunity to grow and contribute.
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .content {
+            margin-top: 100px;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .intro {
+            text-align: center;
+            font-size: 24px;
+            color: navy;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .company-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .company-section h2 {
+            color: navy;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .contact {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .description {
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Sedona Michels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Comfortaa', cursive;
+            background: repeating-linear-gradient(
+                0deg,
+                white,
+                white 50px,
+                rgba(173, 216, 230, 0.3) 50px,
+                rgba(173, 216, 230, 0.3) 100px
+            );
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .nav-links {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-family: 'Comfortaa', cursive;
+            margin: 0 5px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+        .navbar a.active {
+            background-color: navy;
+            color: white;
+            border-radius: 3px;
+        }
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: navy;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 2px solid navy;
+            padding-bottom: 8px;
+        }
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .school {
+            font-weight: bold;
+            color: #333;
+        }
+        .dates {
+            color: #666;
+            text-align: right;
+        }
+        .job-item {
+            margin-bottom: 25px;
+        }
+        .job-item:last-child {
+            margin-bottom: 0;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+        .company {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .responsibilities {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+        .responsibilities li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .responsibilities li:before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: navy;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+        .skills-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: #333;
+        }
+        .skills-list li:before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: navy;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="resume.html" class="active">Resume</a>
+            <a href="careers.html">Careers</a>
+            <a href="discover.html">Discover</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="school">University of Minnesota Duluth</div>
+                <div class="dates">August 2024 - December 2027</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Proficient in Microsoft applications</li>
+                <li>Time management</li>
+                <li>Oral and written communication</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-title">Student Resource Desk Assistant</div>
+                    <div class="dates">August 2025 - Present</div>
+                </div>
+                <div class="company">University of Minnesota Duluth, Duluth, MN</div>
+                <ul class="responsibilities">
+                    <li>Monitor 50+ emails, chats, and calls a day through our online customer service management tools</li>
+                    <li>Problem solve and answer questions for university students and guests on financial aid, registration, and campus navigation</li>
+                    <li>Provide organization of financial aid and registration documents</li>
+                    <li>Explain and navigate UMD online tools and resources such as MyU</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-title">Shift Lead</div>
+                    <div class="dates">Feb. 2024 - Present</div>
+                </div>
+                <div class="company">Scooter's Coffee, Mankato, MN</div>
+                <ul class="responsibilities">
+                    <li>Oversee daily operations during opening, mid, and closing shifts</li>
+                    <li>Ensure cleanliness and organization of the workplace, maintaining high standards</li>
+                    <li>Handle daily cash logs and financial reporting</li>
+                    <li>Prepare food and beverages to meet customer expectations</li>
+                    <li>Act as the shift manager, making key decisions in the absence of senior staff</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-title">Environmental Services Technician</div>
+                    <div class="dates">Feb. 2022 - May 2023</div>
+                </div>
+                <div class="company">Mayo Clinic, Mankato, MN</div>
+                <ul class="responsibilities">
+                    <li>Ensured cleanliness and sanitation of patient rooms, offices, and common areas</li>
+                    <li>Followed strict procedures to maintain a safe and hygienic environment for patients and staff</li>
+                    <li>Efficiently handled waste disposal, maintaining proper safety protocols</li>
+                    <li>Performed detailed cleaning tasks including dusting and surface sanitization</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-title">Shift Lead</div>
+                    <div class="dates">Feb. 2022 - Nov. 2023</div>
+                </div>
+                <div class="company">Dunkin Donuts, Mankato, MN</div>
+                <ul class="responsibilities">
+                    <li>Led shifts, ensuring smooth operations and excellent customer service</li>
+                    <li>Trained new employees and supported team development</li>
+                    <li>Managed store cleanliness, stocked shelves, and maintained product displays</li>
+                    <li>Provided tailored recommendations to customers based on preferences</li>
+                    <li>Effectively resolved customer complaints and maintained a positive experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="resume-tab-container">
+        <div class="bottom-tab">
+            <a href="files/Sedona Resume 2024.pdf" target="_blank" class="resume-link">Sedona Michels Resume</a>
+        </div>
+    </div>
+
+    <style>
+        .resume-tab-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .bottom-tab {
+            background-color: navy;
+            padding: 12px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .resume-link {
+            color: white;
+            text-decoration: none;
+            font-family: 'Comfortaa', cursive;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+        .resume-link:hover {
+            opacity: 0.9;
+        }
+    </style>
+</body>
+</html>

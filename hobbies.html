@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Sedona Michels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Comfortaa', cursive;
+            background: repeating-linear-gradient(
+                0deg,
+                white,
+                white 50px,
+                rgba(173, 216, 230, 0.3) 50px,
+                rgba(173, 216, 230, 0.3) 100px
+            );
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .nav-links {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-family: 'Comfortaa', cursive;
+            margin: 0 5px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+        .navbar a.active {
+            background-color: navy;
+            color: white;
+            border-radius: 3px;
+        }
+        .content {
+            margin-top: 70px;
+            padding: 15px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hobby-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .hobby-text {
+            flex: 1.2;
+        }
+        .hobby-text h2 {
+            color: navy;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+        .hobby-text p {
+            line-height: 1.5;
+            font-size: 14px;
+            margin: 0;
+        }
+        .hobby-image {
+            flex: 0.8;
+        }
+        .hobby-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">About Me</a>
+            <a href="hobbies.html" class="active">Hobbies</a>
+            <a href="resume.html">Resume</a>
+            <a href="careers.html">Careers</a>
+            <a href="discover.html">Discover</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="hobby-section">
+            <div class="hobby-text">
+                <h2>Hiking</h2>
+                <p>I really enjoy hiking and going for walks, and living in Duluth makes that even better! It is such an incredible place to spend time outdoors. With its countless trails, beautiful parks, and stunning views of Lake Superior, every place outdoors is so enjoyable. I love how peaceful it is to be surrounded by nature, it gives me a chance to slow down and take a break from school and work. Hiking and walking also help me stay active while doing something I genuinely enjoy, whether I'm out exploring on my own or spending time with friends.</p>
+            </div>
+            <div class="hobby-image">
+                <img src="images/IMG_3815.jpg" alt="Hiking Photo">
+            </div>
+        </div>
+
+        <div class="hobby-section" style="margin-top: 30px;">
+            <div class="hobby-image">
+                <img src="images/IMG_1010.jpg" alt="Traveling Photo">
+            </div>
+            <div class="hobby-text">
+                <h2>Traveling</h2>
+                <p>I truly enjoy seeing the beauty that our world has to offer outside of where I am from. I really enjoy traveling because it gives me the chance to experience new places, cultures, and perspectives. I've had the privilege of traveling to many states across the U.S. as well as countries outside of the U.S., and each trip has given me so many great memories. Whether it's trying new foods, meeting new people, or exploring beautiful landmarks. Traveling makes me appreciate how big and diverse the world is, while also appreciating where I am from and how my culture has formed me.</p>
+            </div>
+        </div>
+
+        <div class="hobby-section" style="margin-top: 30px;">
+            <div class="hobby-text">
+                <h2>Friends and Family</h2>
+                <p>I really enjoy spending time with my family and friends because they're such an important part of my life. Growing up as the youngest of four kids, I was always surrounded by family, and I've always loved being part of that. Some of my best memories come from family gatherings, holidays, or just hanging out together. As I've gotten older, my friends have also become a huge part of who I am. They've really become like an extension of my family, and I love having people to laugh with, go on adventures with, or just relax and spend time with. Being around family and friends always reminds me of what's important and brings me a lot of happiness.</p>
+            </div>
+            <div class="hobby-image">
+                <img src="images/christmas.JPEG" alt="Christmas Family Photo">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

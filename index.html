@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Comfortaa', cursive;
+            background: repeating-linear-gradient(
+                0deg,
+                white,
+                white 50px,
+                rgba(173, 216, 230, 0.3) 50px,
+                rgba(173, 216, 230, 0.3) 100px
+            );
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .nav-links {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-family: 'Comfortaa', cursive;
+            margin: 0 5px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+        .navbar a.active {
+            background-color: navy;
+            color: white;
+            border-radius: 3px;
+        }
+        .banner {
+            background-color: rgba(0, 0, 128, 0.25);
+            padding: 70px 0;
+            text-align: center;
+            margin: 80px auto 60px auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .name {
+            font-size: 48px;
+            color: navy;
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+        .gallery img, .gallery video {
+            width: 300px;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="active">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="resume.html">Resume</a>
+            <a href="careers.html">Careers</a>
+            <a href="discover.html">Discover</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="name">SEDONA MICHELS</div>
+    </div>
+    
+    <div class="gallery">
+        <img src="images/IMG_0978.jpg" alt="Image 1">
+        <video width="300" height="400" autoplay loop muted playsinline>
+            <source src="images/welcome.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="images/lutsen.jpg" alt="Lutsen">
+    </div>
+
+    <div class="bio fade-in">
+        <div class="bio-text">
+            My name is Sedona Michels, I am currently a sophomore at the University of Minnesota Duluth studying Human Resource Management. My hometown is Mankato, MN where I grew up with 3 siblings and learned to truly value each relationship in my life. In my free time I enjoy staying active, painting, or being with friends and family.
+            <div class="linkedin-box">
+                <a href="https://www.linkedin.com/in/sedona-michels-10165b34b/" target="_blank" class="linkedin-link">Connect with me on LinkedIn!</a>
+            </div>
+        </div>
+        <div class="bio-image">
+            <img src="images/headshot.jpg" alt="Sedona Michels Headshot">
+        </div>
+    </div>
+
+    <style>
+        .linkedin-box {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .linkedin-link {
+            display: inline-block;
+            background-color: navy;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: opacity 0.3s ease;
+        }
+        .linkedin-link:hover {
+            opacity: 0.9;
+        }
+        .bio {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .bio.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .bio-text {
+            flex: 1.5;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .bio-image {
+            flex: 1;
+        }
+        .bio-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+
+    <script>
+        function checkFade() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isVisible = (rect.top <= window.innerHeight * 0.8);
+                if (isVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        document.addEventListener('scroll', checkFade);
+        window.addEventListener('load', checkFade);
+    </script>
+</body>
+</html>

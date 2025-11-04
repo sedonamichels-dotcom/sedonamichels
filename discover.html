@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Sedona Michels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Comfortaa', cursive;
+            background: repeating-linear-gradient(
+                0deg,
+                white,
+                white 50px,
+                rgba(173, 216, 230, 0.3) 50px,
+                rgba(173, 216, 230, 0.3) 100px
+            );
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .nav-links {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .navbar a {
+            color: navy;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-family: 'Comfortaa', cursive;
+            margin: 0 5px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+        .navbar a.active {
+            background-color: navy;
+            color: white;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">About Me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="resume.html">Resume</a>
+            <a href="careers.html">Careers</a>
+            <a href="discover.html" class="active">Discover</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="text-section">
+            <h1 class="title">Why Duluth?</h1>
+            <p>I chose to attend the University of Minnesota Duluth because of the unique location. Not many people can say they got to attend college on the shore of one of the Great Lakes. I also chose Duluth because it gives the feel of a smaller University with smaller class sizes and the interconnected campus while also having some of the amenities of a bigger school such as Division 1 and 2 sports and campus life.</p>
+
+            <p>What I really like about Duluth is how much there is to do outside, especially with Lake Superior right there. Going to the beach in the summer and fall is one of my favorite things, and the lakewalk is perfect for hiking, biking, or just hanging out by the water. In Canal Park there are always fun places to eat and cool shops. I also love the proximity to many of the cute towns up the north shore such as Two Harbors and Lutsen.</p>
+
+            <p>The video below shows some of the beauty Duluth and the surrounding areas have to offer and displays why I love it here!</p>
+        </div>
+        
+        <div class="video-container">
+            <video width="100%" controls>
+                <source src="videos/duluthvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <style>
+        .video-container {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        video {
+            display: block;
+            width: 100%;
+            max-height: 400px;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .text-section p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .text-section p:last-child {
+            margin-bottom: 0;
+        }
+        .title {
+            color: navy;
+            font-size: 32px;
+            margin-bottom: 25px;
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>
