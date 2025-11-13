@@ -1,0 +1,277 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+    background: repeating-linear-gradient(
+        0deg,
+        white,
+        white 50px,
+        rgba(173, 216, 230, 0.3) 50px,
+        rgba(173, 216, 230, 0.3) 100px
+    );
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.nav-links {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: navy;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    margin: 0 5px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+.navbar a.active {
+    background-color: navy;
+    color: white;
+    border-radius: 3px;
+}
+
+/* Banner Styles */
+.banner {
+    background-color: rgba(0, 0, 128, 0.25);
+    padding: 70px 0;
+    text-align: center;
+    margin: 80px auto 60px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-size: 48px;
+    color: navy;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.gallery img, .gallery video {
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.gallery img:hover, .gallery video:hover {
+    transform: scale(1.05);
+}
+
+/* Bio Section Styles */
+.bio {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.bio.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bio-text {
+    flex: 1.5;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.bio-image {
+    flex: 1;
+}
+
+.bio-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* LinkedIn Box Styles */
+.linkedin-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.linkedin-link {
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.linkedin-link:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+
+/* Mobile Styles (up to 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        padding-right: 0;
+    }
+    
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 10px;
+        margin: 2px;
+    }
+    
+    .banner {
+        margin: 20px auto 40px auto;
+        padding: 40px 0;
+    }
+    
+    .name {
+        font-size: 32px;
+        padding: 0 15px;
+    }
+    
+    .gallery {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .gallery img, .gallery video {
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+    }
+    
+    .bio {
+        flex-direction: column;
+        margin: 20px 15px;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .bio-text {
+        font-size: 14px;
+    }
+}
+
+/* Tablet Styles (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-links {
+        padding-right: 10px;
+    }
+    
+    .navbar a {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+    
+    .name {
+        font-size: 42px;
+    }
+    
+    .gallery {
+        gap: 15px;
+        padding: 30px;
+    }
+    
+    .gallery img, .gallery video {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .bio {
+        margin: 30px 20px;
+        padding: 25px;
+        gap: 30px;
+    }
+    
+    .bio-text {
+        font-size: 15px;
+    }
+}
+
+/* Large Desktop Styles (1025px and up) */
+@media screen and (min-width: 1025px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    
+    .gallery {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .bio {
+        max-width: 1100px;
+    }
+}
